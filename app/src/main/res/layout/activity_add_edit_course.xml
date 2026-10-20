@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2196F3"
+        app:titleTextColor="@android:color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/edtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tên khóa học"
+                android:minHeight="48dp"
+                android:inputType="text"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mô tả"
+                android:minHeight="48dp"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtInstructor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Giảng viên"
+                android:minHeight="48dp"
+                android:inputType="text"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Học phí (Double)"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Thời lượng (giờ)"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Thumbnail URL"
+                android:minHeight="48dp"
+                android:inputType="textUri"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtTrailerUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Trailer URL"
+                android:minHeight="48dp"
+                android:inputType="textUri"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn danh mục:"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerEditCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lưu thay đổi"
+                android:backgroundTint="#4CAF50"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
